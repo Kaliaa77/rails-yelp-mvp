@@ -1,0 +1,10 @@
+<%= render "nav" %>
+<div class="m-3">
+  <h1> Liste des Restaurants </h1>
+
+  <div class=>
+    <% @restaurants.each do |restaurant| %>
+  <h4><%= link_to restaurant.name, restaurant_path(restaurant) %></h4>
+    <% end %>
+  </div>
+</div>
